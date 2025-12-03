@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD candidate at Hanyang University.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_color.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>#221, Engineering Building V,</p>
+    <p>Hanyang University, Ansan-si,</p>
+    <p>Gyeonggi-do, Republic of Korea</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -28,6 +28,10 @@ latest_posts:
 ---
 
 # About
-Welcome, thank you for your stopping by!
+Welcome, thank you for stopping by!
 
-I am a PhD student in the Department of Mechanical Engineering at the Hanyang University, Korea.
+I am a PhD candidate in the Department of Mechanical Engineering at the Hanyang University, Korea.
+
+My research interests include computer vision, smart manufacturing, metal forming, and automated systems for industrial applications. My goal is to link academic research to real-world applications to enhance quality and productivity.
+
+I am passionate about creating AI-based automated systems for smart manufacturing that solve real-world industrial problems. I believe that in the Industry 4.0 era, AI-based technologies are the game-changer in various fields.
