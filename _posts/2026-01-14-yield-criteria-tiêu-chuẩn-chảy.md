@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Yield Criteria: Tiêu chuẩn chảy"
-date: 2026-01-14T12:41:00.000+09:00
+description: Mô tả về tiêu chuẩn chảy của vật liệu
+date: 2026-01-14T23:41:00.000+09:00
 tags: metal forming, plasticity
 categories: metal forming
 ---
