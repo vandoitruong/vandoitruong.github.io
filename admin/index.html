@@ -7,7 +7,25 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Decap CMS from CDN -->
+    <!-- Netlify Identity widget (needed for login, invite, password reset) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <script>
+      // Automatically process invite / reset links
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function (user) {
+          // If user not logged in yet
+          if (!user) {
+            // When login happens, reload to /admin
+            window.netlifyIdentity.on("login", function () {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
