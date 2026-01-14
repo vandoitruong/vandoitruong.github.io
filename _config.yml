@@ -181,8 +181,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _posts/
-  - _pages/blog.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -198,6 +196,9 @@ plugins:
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
+
+# Publish posts with future dates (useful when timezone offsets are involved)
+future: true
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
