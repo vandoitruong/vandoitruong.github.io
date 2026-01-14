@@ -1,0 +1,95 @@
+# Decap CMS configuration for Jekyll + GitHub Pages
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://vandoitruong.github.io
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+# Collections
+collections:
+  - name: posts
+    label: Posts
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "string", required: false }
+      - { label: "Categories", name: "categories", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: pages
+    label: Pages
+    folder: _pages
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", required: false }
+      - { label: "Layout", name: "layout", widget: "string", default: "page" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: news
+    label: News
+    folder: _news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Inline", name: "inline", widget: "boolean", default: true }
+      - { label: "Related Posts", name: "related_posts", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: projects
+    label: Projects
+    folder: _projects
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Image", name: "img", widget: "image", required: false }
+      - { label: "Importance", name: "importance", widget: "number", required: false }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Related Publications", name: "related_publications", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: books
+    label: Books
+    folder: _books
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "book-review" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Cover", name: "cover", widget: "image", required: false }
+      - { label: "Open Library ID (OLID)", name: "olid", widget: "string", required: false }
+      - { label: "ISBN", name: "isbn", widget: "string", required: false }
+      - { label: "Categories", name: "categories", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "string", required: false }
+      - { label: "Buy Link", name: "buy_link", widget: "string", required: false }
+      - { label: "Started", name: "started", widget: "date", required: false }
+      - { label: "Finished", name: "finished", widget: "date", required: false }
+      - { label: "Released", name: "released", widget: "number", required: false }
+      - { label: "Stars", name: "stars", widget: "number", required: false }
+      - { label: "Goodreads Review ID", name: "goodreads_review", widget: "string", required: false }
+      - { label: "Status", name: "status", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
