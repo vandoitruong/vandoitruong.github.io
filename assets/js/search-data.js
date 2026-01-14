@@ -48,9 +48,9 @@ ninja.data = [{
             window.location.href = "/blog/2026/introduction/";
           
         },
-      },{id: "post-yield-criteria-tiêu-chuẩn-chảy-dẻo",
+      },{id: "post-yield-criterion-tiêu-chuẩn-chảy-dẻo",
         
-          title: "Yield Criteria: Tiêu chuẩn chảy dẻo",
+          title: "Yield Criterion: Tiêu chuẩn chảy dẻo",
         
         description: "Mô tả về tiêu chuẩn chảy của vật liệu",
         section: "Posts",
