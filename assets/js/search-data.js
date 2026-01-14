@@ -38,7 +38,12 @@ ninja.data = [{
             },},{id: "news-a-new-paper-deep-learning-based-machine-vision-system-for-real-time-edge-fracture-detection-in-the-hole-expansion-test-has-been-published-in-the-journal-engineering-applications-of-artificial-intelligence",
           title: 'A new paper, “Deep learning-based machine vision system for real-time edge fracture detection...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-test",
+          title: 'test',
+          description: "sd",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/test/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
