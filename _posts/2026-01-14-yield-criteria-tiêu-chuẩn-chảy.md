@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yield Criteria: Tiêu chuẩn chảy dẻo"
+title: "Yield Criterion: Tiêu chuẩn chảy dẻo"
 description: Mô tả về tiêu chuẩn chảy của vật liệu
 date: 2026-01-13T14:41:00.000Z
 tags: metal forming, plasticity
@@ -20,7 +20,7 @@ Bạn hãy tưởng tượng rằng, trong đời sống hằng ngày, nếu có
 Để đơn giản thì người ta bắt đầu với thí nghiệm kéo đơn trục (uniaxis tensile test). 
 ...
 
-## 2. Vì sao cần tiêu chuẩn chảy (Yield criteria)
+## 2. Vì sao cần tiêu chuẩn chảy (Yield criterion)
 
 mình đang viết :)) ...
 
