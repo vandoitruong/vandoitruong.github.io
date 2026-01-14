@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-yield-criteria-tiêu-chuẩn-chảy",
+        },{id: "post-giới-thiệu-cách-tạo-trang-web-và-viết-blog",
+        
+          title: "Giới thiệu cách tạo trang web và viết blog",
+        
+        description: "Cách mình đã tạo blog này ^^",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/introduction/";
+          
+        },
+      },{id: "post-yield-criteria-tiêu-chuẩn-chảy",
         
           title: "Yield Criteria: Tiêu chuẩn chảy",
         
@@ -45,7 +56,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/yield-criteria-ti%C3%AAu-chu%E1%BA%A9n-ch%E1%BA%A3y/";
+            window.location.href = "/blog/2026/yield-criteria-tieu-chu%E1%BA%A9n-ch%E1%BA%A3y/";
           
         },
       },{id: "books-the-godfather",
@@ -59,22 +70,7 @@ ninja.data = [{
           section: "News",},{id: "news-test-first-annoucement",
           title: 'Test first annoucement',
           description: "",
-          section: "News",},{id: "projects-project-3",
-          title: 'Project 3',
-          description: "da",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/15_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
