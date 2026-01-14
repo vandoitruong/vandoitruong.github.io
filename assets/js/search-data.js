@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
@@ -30,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "books-the-godfather",
+        },{id: "post-yield-criteria-tiêu-chuẩn-chảy",
+        
+          title: "Yield Criteria: Tiêu chuẩn chảy",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/yield-criteria-ti%C3%AAu-chu%E1%BA%A9n-ch%E1%BA%A3y/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
@@ -38,11 +56,16 @@ ninja.data = [{
             },},{id: "news-a-new-paper-deep-learning-based-machine-vision-system-for-real-time-edge-fracture-detection-in-the-hole-expansion-test-has-been-published-in-the-journal-engineering-applications-of-artificial-intelligence",
           title: 'A new paper, “Deep learning-based machine vision system for real-time edge fracture detection...',
           description: "",
-          section: "News",},{id: "projects-test",
-          title: 'test',
-          description: "sd",
+          section: "News",},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/test/";
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-email',
         title: 'email',

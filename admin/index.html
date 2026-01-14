@@ -26,6 +26,83 @@
           }
         });
       }
+
+      // Auto-increment helpers for News (order) and Projects (importance)
+      (function () {
+        const owner = "vandoitruong";
+        const repo = "vandoitruong.github.io";
+
+        async function fetchDir(dir) {
+          try {
+            const res = await fetch(
+              `https://api.github.com/repos/${owner}/${repo}/contents/${dir}`
+            );
+            if (!res.ok) return [];
+            return await res.json();
+          } catch (e) {
+            console.warn("GitHub API fetch failed:", e);
+            return [];
+          }
+        }
+
+        async function getNextNewsOrder() {
+          const items = await fetchDir("_news");
+          let maxNum = 0;
+          for (const item of items) {
+            const name = item.name || "";
+            // Expect filenames like announcement_1.md
+            const m = name.match(/^announcement_(\d+)\./);
+            if (m) {
+              const n = parseInt(m[1], 10);
+              if (!isNaN(n)) maxNum = Math.max(maxNum, n);
+            }
+          }
+          return maxNum + 1;
+        }
+
+        async function getNextProjectImportance() {
+          const items = await fetchDir("_projects");
+          let maxNum = 0;
+          for (const item of items) {
+            const name = item.name || "";
+            // Expect filenames like 1_project.md or 2_some-title.md
+            const m = name.match(/^(\d+)_/);
+            if (m) {
+              const n = parseInt(m[1], 10);
+              if (!isNaN(n)) maxNum = Math.max(maxNum, n);
+            }
+          }
+          return maxNum + 1;
+        }
+
+        // Register preSave to set missing order/importance automatically
+        if (window.CMS && typeof window.CMS.registerEventListener === "function") {
+          window.CMS.registerEventListener({
+            name: "preSave",
+            handler: async ({ entry }) => {
+              try {
+                const data = entry.get("data");
+
+                // News: set order if missing
+                if (data.has("order") && !data.get("order")) {
+                  const nextOrder = await getNextNewsOrder();
+                  return data.set("order", nextOrder);
+                }
+
+                // Projects: set importance if missing
+                if (data.has("importance") && !data.get("importance")) {
+                  const nextImp = await getNextProjectImportance();
+                  return data.set("importance", nextImp);
+                }
+              } catch (e) {
+                console.warn("preSave auto-increment failed:", e);
+              }
+              // No change
+              return undefined;
+            },
+          });
+        }
+      })();
     </script>
   </body>
 </html>
