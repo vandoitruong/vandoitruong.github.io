@@ -48,15 +48,15 @@ ninja.data = [{
             window.location.href = "/blog/2026/introduction/";
           
         },
-      },{id: "post-yield-criteria-tiêu-chuẩn-chảy",
+      },{id: "post-yield-criteria-tiêu-chuẩn-chảy-dẻo",
         
-          title: "Yield Criteria: Tiêu chuẩn chảy",
+          title: "Yield Criteria: Tiêu chuẩn chảy dẻo",
         
         description: "Mô tả về tiêu chuẩn chảy của vật liệu",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/yield-criteria-tieu-chu%E1%BA%A9n-ch%E1%BA%A3y/";
+            window.location.href = "/blog/2026/yield-criteria-ti%C3%AAu-chu%E1%BA%A9n-ch%E1%BA%A3y/";
           
         },
       },{id: "books-the-godfather",
