@@ -13,7 +13,7 @@ toc:
 Chào bạn, mình rất vui khi bạn ghé thăm trang của mình.
 Trong bài này, mình sẽ giới thiệu về việc, làm thế nào để mình tạo được trang web như thế này.
 
-# Tạo trang web với Github
+## 1. Tạo trang web với Github
 Để tạo được trang web cá nhân với đơn giản và là nơi phù hợp để chia sẽ những kiến thức đã học, mình bắt đầu tìm kiếm với một vài từ khoá ví dụ "personal blog, personal website or portfolio". 
 
 Sau khi tìm hiểu thì mình chọn github, tại vì đây là nơi lưu trữ các dự án về code và github cũng cho phép mình tạo một website với tên miền github.io miễn phí.
@@ -33,7 +33,7 @@ Cuối cùng sau mấy hôm suy nghĩ những mục mình cần ghi và chỉnh 
 
 Mọi bài viết ở đây đều được lưu trữ public trong repo này, nên nếu bạn có ý định tạo một trang web giống mình thì có thể fork hoặc tải về [tại đây](https://github.com/vandoitruong/vandoitruong.github.io).
 
-# Hướng dẫn viết blog
+##  2. Hướng dẫn viết blog
 Trong repo này có một thư mục gọi là "_post", trong đó chứa những bài viết, nên mình chỉ đơn giản là copy nó ra. 
 
 Mỗi file thì có hai phần, tạm gọi là đầu (header) và thân (body). Phần đầu thì mình cần thay đổi những thông tin liên quan, ví dụ ngày giờ, tên, tag, ... Sau đó, ở phần thân thì mình dùng markdown để viết. 

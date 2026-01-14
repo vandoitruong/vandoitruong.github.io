@@ -76,7 +76,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: "Doi's Blog" # blog_name will be displayed in your blog page
-blog_description: "Save & Share: Nơi tôi lưu giữ và chia sẻ những kiến thức đã học." # blog_description will be displayed in your blog page
+blog_description: "Save & Share: Nơi mình lưu giữ và chia sẻ những kiến thức đã học." # blog_description will be displayed in your blog page
 blog_author: Van Doi Truong # blog_author will be displayed in your blog page
 permalink: "/blog/:year/:title/"
 lsi: false # produce an index for related posts
