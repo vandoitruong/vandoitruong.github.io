@@ -41,7 +41,7 @@ ninja.data = [{
         
           title: "Yield Criteria: Tiêu chuẩn chảy",
         
-        description: "",
+        description: "Mô tả về tiêu chuẩn chảy của vật liệu",
         section: "Posts",
         handler: () => {
           
