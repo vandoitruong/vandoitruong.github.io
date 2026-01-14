@@ -18,78 +18,43 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "string", required: false }
-      - { label: "Categories", name: "categories", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: pages
-    label: Pages
-    folder: _pages
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Permalink", name: "permalink", widget: "string", required: false }
-      - { label: "Layout", name: "layout", widget: "string", default: "page" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", required: true, hint: "Post title (shown on listings and page header)" }
+      - { label: "Description", name: "description", widget: "string", required: true, hint: "Short summary under the title on listings" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: true, hint: "Publish date/time (used in slug and sort)" }
+      - { label: "Tags", name: "tags", widget: "list", required: false, hint: "List of tags (e.g., [formatting, links])" }
+      - { label: "Categories", name: "categories", widget: "list", required: false, hint: "List of categories (e.g., [sample-posts])" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false, hint: "Optional image shown on list cards (assets/... path)" }
+      - { label: "Body", name: "body", widget: "markdown", required: true, hint: "Main content in Markdown" }
 
   - name: news
     label: News
     folder: _news
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "announcement_{{order}}"
     editor:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Inline", name: "inline", widget: "boolean", default: true }
-      - { label: "Related Posts", name: "related_posts", widget: "boolean", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", required: true, hint: "News headline" }
+      - { label: "Order", name: "order", widget: "number", required: true, hint: "Numeric order used in filename (e.g., 1, 2)" }
+      - { label: "Date", name: "date", widget: "datetime", required: true, hint: "Publish date/time" }
+      - { label: "Inline", name: "inline", widget: "boolean", default: false, hint: "true for short inline update, false for full announcement" }
+      - { label: "Related Posts", name: "related_posts", widget: "boolean", default: false, hint: "Show related posts section under the news" }
+      - { label: "Body", name: "body", widget: "markdown", required: true, hint: "News content in Markdown" }
 
   - name: projects
     label: Projects
     folder: _projects
     create: true
-    slug: "{{slug}}"
+    slug: "{{importance}}_project"
     editor:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Image", name: "img", widget: "image", required: false }
-      - { label: "Importance", name: "importance", widget: "number", required: false }
-      - { label: "Category", name: "category", widget: "string", required: false }
-      - { label: "Related Publications", name: "related_publications", widget: "boolean", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: books
-    label: Books
-    folder: _books
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "book-review" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Cover", name: "cover", widget: "image", required: false }
-      - { label: "Open Library ID (OLID)", name: "olid", widget: "string", required: false }
-      - { label: "ISBN", name: "isbn", widget: "string", required: false }
-      - { label: "Categories", name: "categories", widget: "string", required: false }
-      - { label: "Tags", name: "tags", widget: "string", required: false }
-      - { label: "Buy Link", name: "buy_link", widget: "string", required: false }
-      - { label: "Started", name: "started", widget: "date", required: false }
-      - { label: "Finished", name: "finished", widget: "date", required: false }
-      - { label: "Released", name: "released", widget: "number", required: false }
-      - { label: "Stars", name: "stars", widget: "number", required: false }
-      - { label: "Goodreads Review ID", name: "goodreads_review", widget: "string", required: false }
-      - { label: "Status", name: "status", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", required: true, hint: "Project title (e.g., 'project 1')" }
+      - { label: "Description", name: "description", widget: "string", required: true, hint: "Short summary shown in listings (e.g., 'with background image')" }
+      - { label: "Background Image", name: "img", widget: "image", required: false, hint: "Path under assets/img/ (e.g., assets/img/12.jpg)" }
+      - { label: "Importance (Order)", name: "importance", widget: "number", required: true, hint: "Numeric order used at start of filename (e.g., 1, 2)" }
+      - { label: "Category", name: "category", widget: "string", required: false, hint: "Category tag (e.g., work, research)" }
+      - { label: "Related Publications", name: "related_publications", widget: "boolean", default: false, hint: "Toggle to show related publications" }
+      - { label: "Body", name: "body", widget: "markdown", required: true, hint: "Main project content; you can use figure.liquid includes and Bootstrap rows/cols" }
