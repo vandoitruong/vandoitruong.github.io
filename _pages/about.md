@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD candidate at Hanyang University.
+subtitle: Vietnamese | Smart Manufacturing | AI for Industry | Language Learning Enthusiast
 
 profile:
   align: right
@@ -30,7 +30,7 @@ latest_posts:
 # About
 Welcome, thank you for stopping by!
 
-I am a PhD candidate in the Department of Mechanical Engineering at the Hanyang University, Korea.
+I completed my PhD in Mechanical Engineering at Hanyang University, where I am currently working as a Postdoctoral Researcher in the Department of Mechanical Engineering.
 
 My research interests include computer vision, smart manufacturing, metal forming, and automated systems for industrial applications. My goal is to link academic research to real-world applications to enhance quality and productivity.
 
