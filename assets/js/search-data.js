@@ -67,8 +67,8 @@ ninja.data = [{
             },},{id: "news-a-new-paper-deep-learning-based-machine-vision-system-for-real-time-edge-fracture-detection-in-the-hole-expansion-test-has-been-published-in-the-journal-engineering-applications-of-artificial-intelligence",
           title: 'A new paper, “Deep learning-based machine vision system for real-time edge fracture detection...',
           description: "",
-          section: "News",},{id: "news-test-first-annoucement",
-          title: 'Test first annoucement',
+          section: "News",},{id: "news-graduation-ceremony-i-am-grateful-for-the-journey-the-lessons-learned-and-everyone-who-supported-me-along-the-way",
+          title: 'Graduation ceremony: I am grateful for the journey, the lessons learned, and everyone...',
           description: "",
           section: "News",},{
         id: 'social-email',
