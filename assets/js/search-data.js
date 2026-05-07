@@ -48,6 +48,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/introduction/";
           
         },
+      },{id: "post-yield-point-and-hardening-curve-fitting-điểm-chảy-và-khớp-đường-cong-hóa-bền",
+        
+          title: "Yield Point and hardening curve fitting: điểm chảy và khớp đường cong hóa...",
+        
+        description: "Mô tả về cách tìm điểm chảy và khớp đường cong hóa bền",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/yield_point_and_hardening_curve_fitting/";
+          
+        },
       },{id: "post-yield-criterion-tiêu-chuẩn-chảy-dẻo",
         
           title: "Yield Criterion: Tiêu chuẩn chảy dẻo",
@@ -65,6 +76,9 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-a-new-paper-deep-learning-based-machine-vision-system-for-real-time-edge-fracture-detection-in-the-hole-expansion-test-has-been-published-in-the-journal-engineering-applications-of-artificial-intelligence",
+          title: 'A new paper, “Deep learning-based machine vision system for real-time edge fracture detection...',
+          description: "",
+          section: "News",},{id: "news-a-new-paper-deep-learning-based-machine-vision-system-for-real-time-edge-fracture-detection-in-the-hole-expansion-test-has-been-published-in-the-journal-engineering-applications-of-artificial-intelligence",
           title: 'A new paper, “Deep learning-based machine vision system for real-time edge fracture detection...',
           description: "",
           section: "News",},{id: "news-graduation-ceremony-i-am-grateful-for-the-journey-the-lessons-learned-and-everyone-who-supported-me-along-the-way",
