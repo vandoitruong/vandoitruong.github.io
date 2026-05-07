@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-11-04 15:52:00-0400
+date: 2026-04-01 15:52:00-0400
 inline: true
 related_posts: false
 ---
 
-A new paper, "Deep learning-based machine vision system for real-time edge fracture detection in the hole expansion test," has been published in the journal Engineering Applications of Artificial Intelligence.
+A new paper, "Deep learning prediction of weld bead geometry during multi-pass multi-layer welding process," has been published in the journal Engineering Applications of Artificial Intelligence.

@@ -35,3 +35,6 @@ I completed my PhD in Mechanical Engineering at Hanyang University, where I am c
 My research interests include computer vision, smart manufacturing, metal forming, and automated systems for industrial applications. My goal is to link academic research to real-world applications to enhance quality and productivity.
 
 I am passionate about creating AI-based automated systems for smart manufacturing that solve real-world industrial problems. I believe that in the Industry 4.0 era, AI-based technologies are the game-changer in various fields.
+
+In addition, I also created websites for learning Sino-Korean vocabulary (Vietnamese version only):
+[Tu Hoc Han Han](https://tuhochanhan.pages.dev/) and for learning Korean verbs: [Hoc Dong Tu TOPIK](https://hocdongtutopik.pages.dev/)
